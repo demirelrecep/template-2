@@ -1,0 +1,281 @@
+html {
+    scroll-behavior: smooth;
+}
+
+/*HEADER*/
+header {
+    position: relative;
+}
+header .navbar-toggler {
+    color: #fff !important;
+    border: none;
+    font-size: 26px;
+}
+header .container-fluid {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background: url("../images/bg-1-1.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    padding: 0;
+}
+.container-fluid .bg-light {
+    background: #003740a2 !important;
+    border-bottom: 1px solid #f1ffff
+}
+.container-fluid .navbar-light {
+    font-size: 16px;
+    font-weight: 600;
+}
+.container-fluid .collapse ul li a{
+    color: #fff !important;
+}
+.container-fluid .collapse ul li a::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 2px;
+    background: #fff;
+    transition: width .5s;
+}
+.container-fluid .collapse ul li a:hover::after {
+    width: 100%;
+}
+header .header-text {
+    opacity: 0;
+    position: absolute;
+    top: 35%;
+    transform: translateY(-50%);
+    width: 60%;
+    color: #fff;
+    transition: 1s linear;
+}
+header .header-text p {
+    font-size: 18px;
+}
+header .header-text .btn-primary {
+    background: #003740a2 !important;
+    border: 1px solid #fff;
+    color: #fff;
+}
+header .header-text .btn-primary i {
+    padding-left: 12px;
+    padding-right: 4px;
+    transition: .4s;
+}
+header .header-text .btn-primary:hover {
+    background: #003740 !important;
+}
+header .header-text .btn-primary:hover > i {
+    margin-left: 8px;
+    margin-right: -8px;
+}
+
+
+/*ICONS*/
+.icons {
+    width: 100%;
+    background: #fff;
+    background-attachment: fixed;
+}
+.icons .card-group .card {
+    border: none;
+}
+.icons .card-group .card img {
+    width: 55px;
+    height: 55px;
+    transition: 1s;
+}
+.icons .card-group .card:hover > img {
+    transform: rotate(360deg)
+}
+.icons .card-group .ml-3 {
+    border-left: 1px solid #003840;
+}
+
+
+/*URETIM*/
+.uretim .container-fluid {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background: url("../images/bg3.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    padding: 0;
+}
+.uretim .uretim-text {
+    padding-top: 100px;
+    width: 80%;
+    color: #f1ffff;
+}
+.uretim .uretim-text p {
+    font-size: 16px;
+}
+
+
+/*URUNLER*/
+.urunler {
+    width: 100%;
+}
+.urunler h1 {
+    padding: 110px 0 20px 0;
+}
+.urunler .row-1 {
+    padding: 0 150px;
+}
+.urunler .row-2 {
+    padding: 0 150px;
+}
+.urunler .row .br-left {
+    border-left:1px solid #0037409f;
+}
+.urunler .urun .row .col-md-3 {
+    position: relative;
+    height: 100% !important;
+    padding: 30px;
+}
+.urunler .urun .row .col-md-3 img{
+    width: 100%;
+    transition: .5s;
+}
+.urunler .row .col-md-3 .overlay {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transition: .5s;
+    padding: 30px;
+}
+.urunler .row .col-md-3 .overlay .bg {
+    background: #2831489f;
+    width: 100%;
+    height: 100%;
+    color: #fff;
+}
+.urunler .row .col-md-3 .overlay .text {
+    position: absolute;
+    width: 90%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    color: #fff;
+    font-size: 20px;
+    padding:0 20px;
+    text-align: center;
+}
+.urunler .row .col-md-3 a:hover > .overlay {
+    opacity: 0;
+}
+.urunler .row .col-md-3 a:hover > img {
+    transform: scale(1.03);
+}
+
+
+/*FOOTER*/
+footer {
+    width: 100%;
+    background: #003840;
+    padding: 10px 0;
+}
+footer .text-center {
+    color: #fff;
+    line-height: 90px;
+    border-left: 1px solid #fff;
+    border-right: 1px solid #fff;
+}
+footer .row .text-right {
+    line-height: 90px;
+    font-size: 30px;
+}
+footer .row .text-right a {
+    color: #fff;
+    text-decoration: none;
+    transition: .5s;
+}
+footer .row .text-right a span {
+    transition: .5s;
+}
+
+footer .row .text-right a:hover > span {
+    transform: rotate(360deg);
+}
+
+
+@media (max-width: 992px) {
+    header nav .ml-5 {
+        margin-left: 0 !important;
+        transition: 0;
+    }
+    .urunler .row-1 {
+        border-bottom: none;
+        padding: 0 50px;
+    }
+    .urunler .row-2 {
+        padding: 0 50px;
+    }
+    .urunler .row .br-left {
+        border-left: none;
+    }
+    
+}
+
+@media (max-width: 768px) {
+    header nav .ml-5 {
+        margin-left: 0 !important;
+        transition: 0;
+    }
+    header .header-text {
+        width: 90%;
+        transition: .5s;
+        transform: translateY(-46%);
+    }
+    header .header-text p {
+        font-size: 16px;
+    }
+    .icons .card-group .ml-3 {
+        border: none;
+    }
+    .uretim .uretim-text {
+        width: 100%;
+        color: #f1ffff;
+    }
+    .uretim .uretim-text p {
+        font-size: 14px;
+    }
+    .urunler .urun .row .col-md-3 {
+        padding: 30px;
+    }
+    .urunler .row .col-md-3 .overlay {
+        padding: 30px;
+    }
+    .urunler .row .col-md-3 a:hover > .overlay {
+        opacity: 1;
+    }
+    .urunler .row .col-md-3 a:hover > img {
+        transform: scale(1);
+    }
+    
+    footer .text-left , footer .text-center , footer .text-right {
+        text-align: center !important;
+        border: none;
+    }
+}
+
+@media (max-width: 320px) {
+    .uretim .uretim-text {
+        padding-top: 80px;
+    }
+    
+    .uretim .uretim-text p {
+        font-size: 11px;
+    }
+}
